@@ -48,3 +48,10 @@ Restrictivas por orden
     const;     no redeclaraciones, tiene que ser declarada y asignada al vez. Su valor no cambia
 
 TIPOS DE VARIABLES SEGÚN SU VALOR
+-Reglas Nomenclatua.
+-nunca empieza con numeros.
+-nada de espacios.
+-cuidado con los carateres especiales (- etc...).
+-Intentar escribir en inglés.
+-Nombre descriptivos.
+camelCase

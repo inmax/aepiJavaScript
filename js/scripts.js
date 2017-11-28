@@ -32,10 +32,16 @@ alert(nombre);*/
 
 /*
 const miOtroValor; //Además de no permitir redeclaración, tampoco permite que  no tenga asignada un valor. Debe ser decalara y asignada */
-
+/*
 const mivalor1 = "Texto"; //string
 const mivalor2 = 2342; // tanto int como decimales se procesan igual, como datos operables
 const mivalor3 = 1.8; //
 const mivalor4 = true; // boolean
 
 alert(typeof(mivalor1)); //Método para saber el tipo de variable
+
+//declaración conjunta 
+const mivalor1 = "Texto", mivalor2 = 2342,mivalor3 = 1.8, mivalor4 = true;
+*/
+
+
