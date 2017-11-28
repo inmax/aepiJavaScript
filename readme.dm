@@ -55,3 +55,9 @@ TIPOS DE VARIABLES SEGÚN SU VALOR
 -Intentar escribir en inglés.
 -Nombre descriptivos.
 camelCase
+
+Ejercicio
+planteamiento
+1-preguntar la edad
+2-calculo de días
+3-Salida de datos

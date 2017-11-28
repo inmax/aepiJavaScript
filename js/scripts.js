@@ -44,4 +44,19 @@ alert(typeof(mivalor1)); //Método para saber el tipo de variable
 const mivalor1 = "Texto", mivalor2 = 2342,mivalor3 = 1.8, mivalor4 = true;
 */
 
+//Ejercicio 1. Preguntar al usuario que edad tiene y devolver 
+const nombre = prompt("¿Cómo te llamas?");
+const edad = prompt("¿Qué edad tienes?");
+//alert(edad);
+
+const diasVividos = edad * 365;
+//alert(diasVividos);
+
+/*
+document.write("Has vivido un total de"+ diasVividos); // método multiargumento
+*/
+
+//document.write( "<p>",nombre," ","Has vivido un total de", diasVividos, "días.</p>"); 
+
+document.write( "<p>" + nombre + ", has vivido un total de" + diasVividos + " días.</p>"); // se concatena  a través de +
 
