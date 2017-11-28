@@ -38,3 +38,13 @@ Método prompt()
 Método confirm()
 
 VARIABLES
+Unidades nominales de almacenamiento de información. Tienen dos etapas: declacración y asignación
+Todas deben ser declaradas la primera vez que se utilizan, no es necesario volver a hacerlo, porque consume recursos ,significa reservar una porción de memoria para esa información.
+tipos de declaraciones (redeclaración):  
+Ejemplo
+Restrictivas por orden 
+    var miValor; redeclarciones
+    let miValor; no redeclaraciones
+    const;     no redeclaraciones, tiene que ser declarada y asignada al vez. Su valor no cambia
+
+TIPOS DE VARIABLES SEGÚN SU VALOR
