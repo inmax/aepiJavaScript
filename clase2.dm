@@ -57,3 +57,15 @@ Controlan el flujo de ejecución
         intruccion_2;
         intruccion_3;
     } // Si la expresión condicional tiene un valor true se ejecuta el primer bloque , si no, el segundo
+
+se accede al bloque si el valor NO retorna estos valores
+false   Nun     0   ""  undefined
+
+
+___________________________
+RANGOS DE OPERADORES
+___________________________
+revisar pdf
+const miValor = 2 + 2 * 4 ; // el resultado sería 8
+
+

@@ -270,7 +270,7 @@ if (edad === null) {
 }// las estructuras de control son anidables*/
 
 //PASO 3. Comprobar que el usuario no deja el campo vacío o introduce un valor que no es numérico
-
+/*
 const edad = prompt("¿Qué edad tienes?");
 
 if (edad === null) {// este es el primer bloque de seguridad
@@ -297,8 +297,87 @@ if (edad === null) {// este es el primer bloque de seguridad
         }
 
 }
+*/
 
+/*
+//PASO 4. Imagina que el usuario introduce su edad con un string
 
+const edad = prompt("¿Qué edad tienes?");
 
+if (edad === null) {// este es el primer bloque de seguridad
 
+    document.write("<p>No se recibió la información. Reinicie la aplicación</p>");
 
+} else {
+
+        if(edad ===""){
+
+            document.write('<p>Es necesario que rellenes el campo</p>');
+
+        }else{
+
+            if(isNaN(edad) === true ){
+
+                document.write('<p>Escribe tu edad en número, por favor</p>');
+
+            } else {
+
+                if (edad < 18 ){ 
+                    
+                    alert('Lo sentimos, no puedes acceder aquí hasta que tengas 18 años');
+                    
+                }else{
+                    
+                    alert('¡Bienvenido!'); 
+                    
+                } 
+
+            }
+
+        }
+
+}
+*/
+
+/*
+//PASO 5. Las estructuras de control son resueltas y el script es liberado
+
+const edad = prompt("¿Qué edad tienes?");
+
+if (edad === null) {// este es el primer bloque de seguridad
+
+    document.write("<p>No se recibió la información. Reinicie la aplicación</p>");
+
+} else {
+
+        if(edad ===""){
+
+            document.write('<p>Es necesario que rellenes el campo</p>');
+
+        }else{
+
+            if(isNaN(edad) === true ){
+
+                document.write('<p>Escribe tu edad en número, por favor</p>');
+
+            } else {
+
+                if (edad < 18 ){ 
+                    
+                    alert('Lo sentimos, no puedes acceder aquí hasta que tengas 18 años');
+                    
+                }else{
+                    
+                    alert('¡Bienvenido!'); 
+                    
+                } 
+
+            }
+
+        }
+
+}
+
+document.write('<p><strong>¡Gracias por tu atención!</strong></p>');
+
+*/
