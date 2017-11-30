@@ -58,8 +58,37 @@ Controlan el flujo de ejecución
         intruccion_3;
     } // Si la expresión condicional tiene un valor true se ejecuta el primer bloque , si no, el segundo
 
+
+
+------> IMPORTANTE
 se accede al bloque si el valor NO retorna estos valores
 false   Nun     0   ""  undefined
+
+const continuar = confirm('Deseas continuar');
+
+
+//continuar === true . Esta condición no es necesario especificarla porque cualquier valor distinto de los mencionados antes va a ser true
+
+if (continuar) {
+
+    aler("Epaaaa!");
+}
+
+paso 2 
+
+const continuar = confirm('Deseas continuar');
+
+if (continuar) {
+
+    alert("Epaaaa!");
+
+}else {
+
+    alert('nanai');
+
+}
+
+
 
 
 ___________________________
@@ -69,3 +98,5 @@ revisar pdf
 const miValor = 2 + 2 * 4 ; // el resultado sería 8
 
 
+Hacer lote 1.  practica 0. 7/ 9 horas
+Resolver el código dentro de cada html, en una tag embebida

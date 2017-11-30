@@ -381,3 +381,48 @@ if (edad === null) {// este es el primer bloque de seguridad
 document.write('<p><strong>¡Gracias por tu atención!</strong></p>');
 
 */
+
+
+
+//PASO 7. Optimización. isNaN(edad) === true , no es necesario. Ver notas
+
+const edad = prompt("¿Qué edad tienes?");
+
+if (edad === null) {// este es el primer bloque de seguridad
+
+    document.write("<p>No se recibió la información. Reinicie la aplicación</p>");
+
+} else {
+
+        if(edad ===""){
+
+            document.write('<p>Es necesario que rellenes el campo</p>');
+
+        }else{
+
+            if(isNaN(edad)){
+
+                document.write('<p>Escribe tu edad en número, por favor</p>');
+
+            } else {
+
+                if (edad < 18 ){ 
+                    
+                    alert('Lo sentimos, no puedes acceder aquí hasta que tengas 18 años');
+                    
+                }else{
+                    
+                    alert('¡Bienvenido!'); 
+                    
+                } 
+
+            }
+
+        }
+
+}
+
+document.write('<p><strong>¡Gracias por tu atención!</strong></p>');
+
+
+
