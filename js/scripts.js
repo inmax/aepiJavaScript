@@ -86,7 +86,7 @@ document.write( "<p>" + nombre + ", has vivido un total de" + diasVividos + " d�
  /*_____________________
 EJERCICIO-2
 _______________________*/
-
+/*
 //1- Preguntar al usuario cuál es su depósito 
 const deposito = prompt("Te regalamos 50€ por tu primer depósito ¿Qué cantidad vas a depositar?");
 //alert(deposito);
@@ -97,6 +97,7 @@ const depositoTotal = Number(deposito) + 50;
 
 //3-Comunicar resultado
 document.write('<p>Tu depópsito total es ' + depositoTotal + '</p>' );
+*/
 
 /*
 //el método prompt siempre retorna un string por eso el resultado no es correcto. Hay que proceder a hacer una conversión de tipo.
@@ -122,7 +123,7 @@ inNaN();
 */
 
 
-
+/*
 //Valor false
 const valor1 = isNaN(12);
 alert(valor1);
@@ -142,3 +143,162 @@ alert(valor4);
 //Valor true. No puede procesar el espacio
 const valor5 = isNaN('3 3');
 alert(valor5);
+*/
+
+/*==========================
+ESTRUCTURAS DE CONTROL
+============================*/
+
+/*
+if (7 < 2){ // if (false)....
+
+    alert('es verdadera');
+
+}else{
+
+    alert('es falso');
+
+}*/ 
+
+/*
+if (7 == 2){ // if (false)....
+
+    alert('es verdadera');
+
+}else{
+
+    alert('es falso'); //
+
+}*/
+/*
+if (7 <= 7){ // if (false)....
+    
+        alert('es verdadera');
+    
+    }else{
+    
+        alert('es falso'); //
+    
+    }
+
+if (7 != "hola"){ // if (false)....
+        
+     alert('es verdadera');
+        
+    }else{
+        
+    alert('es falso'); //
+        
+ }
+
+// Diferencia entre equivalente o estrictamente equivalente. Intentar utilizar los === porque es mucho mas exacto y disciplinado reduciendo el margen de error
+
+ if (5 == "5"){ // if (false)....
+    
+ alert('es verdadera');
+    
+}else{
+    
+alert('es falso'); //
+    
+}
+
+if (5 === "5"){ // if (false)....
+    
+ alert('es verdadera');
+    
+}else{
+    
+alert('es falso'); //
+    
+}
+
+if (5 < 8 && 4 > 2){ // El resultado es true
+    
+ alert('es verdadera');
+    
+}else{
+    
+alert('es falso'); //
+    
+}
+*/
+
+
+/*________________
+EJERCICIO
+__________________
+preguntar tu edad
+detectar de si el menor de edad para expulsarle
+si no lo es, dar la bienvenida
+*/
+
+/*
+//PASO 1
+const edad = prompt("¿Qué edad tienes?");
+
+
+if (edad < 18 ){ 
+    
+    alert('Lo sentimos, no puedes acceder aquí hasta que tengas 18 años');
+    
+}else{
+    
+    alert('¡Bienvenido!'); 
+    
+}*/
+
+/*Lo primero que hay que hacer es comprobar que no hay ningún valor incroguente, ningún null Fricción cognitiva*/
+
+//PASO 2. Comprobar que usuario no ejecute ESC
+/*
+const edad = prompt("¿Qué edad tienes?");
+
+if (edad === null) {
+    document.write("<p>No se recibió la información. Reinicie la aplicación</p>");
+} else {
+
+        if (edad < 18 ){ 
+            
+            alert('Lo sentimos, no puedes acceder aquí hasta que tengas 18 años');
+            
+        }else{
+            
+            alert('¡Bienvenido!'); 
+            
+        } 
+}// las estructuras de control son anidables*/
+
+//PASO 3. Comprobar que el usuario no deja el campo vacío o introduce un valor que no es numérico
+
+const edad = prompt("¿Qué edad tienes?");
+
+if (edad === null) {// este es el primer bloque de seguridad
+
+    document.write("<p>No se recibió la información. Reinicie la aplicación</p>");
+
+} else {
+
+        if(edad ==="" || edad ===" " || isNaN(edad)===true){
+
+            document.write('<p>Es necesario un valor real de tu edad</p>');
+
+        }else{
+
+            if (edad < 18 ){ 
+                
+                alert('Lo sentimos, no puedes acceder aquí hasta que tengas 18 años');
+                
+            }else{
+                
+                alert('¡Bienvenido!'); 
+                
+            } 
+        }
+
+}
+
+
+
+
+
