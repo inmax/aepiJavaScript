@@ -7,29 +7,46 @@ Todo responde a la relación jerarquica de objeto. Cómo "window" es el padre de
 window.alert('Mi primera aplicación'); == alert('Mi primera aplicación');
 
 //Esto es una intruncción : ordenes individuales
-//método 1
-alert('Mi primera aplicación'); // esto es un método del objeto window
-//método 1
-alert(window.innerWidth); // esto es una propiedad
 
-console.log("lilililililililil"); // esto es otro método para visualizar datos
-console.error("algo va mal");
-document.write("<p>lalalalalalalalalal </p>"); //Método para escribir en el DOM
-*/
+_____________________
+SALIDA DE DATOS
+_____________________
 
-//Método introducción de datos. Hace que aparezca un alert con la opción "aceptar" o "cancelar". Retorna el valor true para "aceptar" y false para "cancelar"
+//método 1*/
+//alert('Mi primera aplicación'); // esto es un método del objeto window
+//alert(window.innerWidth); // esto es una propiedad del objeto window
+
+//método 2
+//console.log("lilililililililil"); // esto es otro método para visualizar datos
+
+//método 3
+//console.error("algo va mal");
+
+//método 4
+//document.write("<p>lalalalalalalalalal </p>"); //Método para escribir en el DOM
+
+
+/*_____________________
+INTRODUCCIÓN DE DATOS
+_____________________
+Método introducción de datos. Hace que aparezca un alert con la opción "aceptar" o "cancelar". Retorna el valor true para "aceptar" y false para "cancelar"
 /*
+
+//Método 1
 const respuesta = confirm("deseas continuar?");
 alert(respuesta);*/
-
 //si en este método seleccioneas a la opción "cancelar", el valor de retorno es null
-/*
+
+/*Método 2
 const nombre = prompt("¿Cómo te llamas?");
 alert(nombre);*/
 
+/*_____________________
+VARIABLES
+_______________________*/
+
 //var miValor;
 //let mivalor; //No permite redeclaración
-
 /*
 const miOtroValor; //Además de no permitir redeclaración, tampoco permite que  no tenga asignada un valor. Debe ser decalara y asignada */
 /*
@@ -44,7 +61,11 @@ alert(typeof(mivalor1)); //Método para saber el tipo de variable
 const mivalor1 = "Texto", mivalor2 = 2342,mivalor3 = 1.8, mivalor4 = true;
 */
 
-//Ejercicio 1. Preguntar al usuario que edad tiene y devolver 
+/*_____________________
+EJERCICIO-1
+_______________________*/
+/*
+// Preguntar al usuario que edad tiene y devolver 
 const nombre = prompt("¿Cómo te llamas?");
 const edad = prompt("¿Qué edad tienes?");
 //alert(edad);
@@ -52,11 +73,72 @@ const edad = prompt("¿Qué edad tienes?");
 const diasVividos = edad * 365;
 //alert(diasVividos);
 
-/*
+
 document.write("Has vivido un total de"+ diasVividos); // método multiargumento
 */
 
 //document.write( "<p>",nombre," ","Has vivido un total de", diasVividos, "días.</p>"); 
-
+/*
 document.write( "<p>" + nombre + ", has vivido un total de" + diasVividos + " días.</p>"); // se concatena  a través de +
 
+ */
+
+ /*_____________________
+EJERCICIO-2
+_______________________*/
+
+//1- Preguntar al usuario cuál es su depósito 
+const deposito = prompt("Te regalamos 50€ por tu primer depósito ¿Qué cantidad vas a depositar?");
+//alert(deposito);
+
+//2-Calcular el depósito total
+const depositoTotal = Number(deposito) + 50;
+//console.log(depositoTotal);
+
+//3-Comunicar resultado
+document.write('<p>Tu depópsito total es ' + depositoTotal + '</p>' );
+
+/*
+//el método prompt siempre retorna un string por eso el resultado no es correcto. Hay que proceder a hacer una conversión de tipo.
+
+Alerta "árbol no equilibrado" puede ser resultado
+
+Funciones de conversión:
+
+number(); () NO es un método, es una función. Además permite obtener el valor númerico equivalente de cualquier tipo de dato, a diferencia que parseInt que se utiliza solo para string a number
+
+parsetInt(); Ignora los decimales
+
+parseFlow(); Respeta los decimales
+
+Todo esto es muy útil para la valiación de formularios
+Cuando la introducción de datos no es congruente el valor de retorno es nAn
+
+¿Cómo informarnos de que algo es operable?
+Informa de su un dato es inoperable
+
+si es inoperable el valor de retorno es true
+inNaN();
+*/
+
+
+
+//Valor false
+const valor1 = isNaN(12);
+alert(valor1);
+
+//Valor false
+const valor2 = isNaN(3.14);
+alert(valor2);
+
+//Valor true
+const valor3 = isNaN('batman');
+alert(valor3);
+
+//Valor false . Cuidado aquí 33 es un string, pero sigue siendo operable. El resultado quizás no sea el esperado
+const valor4 = isNaN('33');
+alert(valor4);
+
+//Valor true. No puede procesar el espacio
+const valor5 = isNaN('3 3');
+alert(valor5);
