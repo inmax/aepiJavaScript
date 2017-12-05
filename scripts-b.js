@@ -15,7 +15,6 @@ Averiguar cuanto se ha gastado el usurio y devolver la cantidad descontadaa
 const gasto = prompt("¿Cuánto te has gasto?");
 console.log(gasto);
 
-
 if ( gasto < 500 ){
     document.write('Lo sentimos pero no le corresponde ningún descuento, siga comprando');
 }

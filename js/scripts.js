@@ -431,7 +431,7 @@ document.write('<p><strong>¡Gracias por tu atención!</strong></p>');
 
 */
 
-/* Ejercicio clase 3*/
+/* Ejercicio 4. clase 3*/
 /* 
 De 0 a 500€ - sin descuento
 de 501 a 1000€ --- 10%
@@ -523,8 +523,9 @@ if ( gasto < 500 ){
 
 */
 
-
+/*
 //paso 3. Optimización de código. Hay demasiado código repetido
+
 const gasto = prompt("¿Cuánto te has gasto?");
 
 // Hacer global la variable descuento y utilizar let y saca fuera de la estructura de control las directiva document.write() y la variable total, ya que se repitía en cada else
@@ -554,7 +555,47 @@ if ( gasto < 500 ){
 
 if(descuento){
 
-const total= gasto - descuento;
+    const total= gasto - descuento;
 
-document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+    document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+
+}
+*/
+/*
+//Condicional ternario. Es muy bueno para optimizar, no mantenible 
+
+const respuesta = prompt("¿Cuántos argumentos acepta el método prompt?");
+(respuesta == 2) ? aler("¡Correcto!") :alert("¡Merluzo!");
+// el signo ?, indica que es una condicional
+*/
+
+
+//Condicional de tipo switch.
+//Ejercico
+
+const estacion = prompt ("Dame una estación");
+
+switch (estacion) {
+
+    case 'PRIMAVERA':// todo es casesensitive
+    case 'Primavera':
+    case 'primavera':
+        alert('¡Sale la flor!');
+        break;
+    
+    case 'Verano':
+        alert('¡Hace calor!');
+        break;   
+
+     case 'Invierno':
+        alert('¡Hace frí0!');
+        break;
+
+    case 'Otoño':
+        alert('¡Cae la hoja!');
+        break;    
+
+    default:
+        alert('¡UY! Estación no registrada');
+        break;  
 }
