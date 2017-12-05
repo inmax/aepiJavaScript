@@ -447,7 +447,8 @@ Averiguar cuanto se ha gastado el usurio y devolver la cantidad descontadaa
 
 const gasto = prompt("¿Cuánto te has gasto?");
 console.log(gasto);
-
+/*
+//Paso 1
 
 if ( gasto < 500 ){
     document.write('Lo sentimos pero no le corresponde ningún descuento, siga comprando');
@@ -484,3 +485,37 @@ if ( gasto > 2000 ){
         document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
     
     }
+*/
+
+
+//paso 2. Utilización de else if . el script solo pasa a la siguiente condición hasta que haya conmprabado la anterior
+
+
+if ( gasto < 500 ){
+    document.write('Lo sentimos pero no le corresponde ningún descuento, siga comprando');
+
+} else if(gasto <= 1000){
+
+    const descuento = gasto * 10/100;
+
+    const total= gasto - descuento;
+
+    document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+
+} else if(gasto <= 2000){
+
+    const descuento = gasto * 20/100;
+    
+    const total= gasto - descuento;
+    
+    document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+
+} else{
+
+        const descuento = gasto * 30/100;
+        
+        const total= gasto - descuento;
+        
+        document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+
+}
