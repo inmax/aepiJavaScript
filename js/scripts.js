@@ -29,17 +29,22 @@ _____________________
 /*_____________________
 INTRODUCCIÓN DE DATOS
 _____________________
-Método introducción de datos. Hace que aparezca un alert con la opción "aceptar" o "cancelar". Retorna el valor true para "aceptar" y false para "cancelar"
+Método introducción de datos. */
+
 /*
+Método confirm
+Hace que aparezca un alert con la opción "aceptar" o "cancelar". Retorna el valor true para "aceptar" y false para "cancelar"
 
-//Método 1
+//Método 1- valores de retorno: aceptar / cancelar
 const respuesta = confirm("deseas continuar?");
-alert(respuesta);*/
-//si en este método seleccioneas a la opción "cancelar", el valor de retorno es null
+alert(respuesta);
+*/
 
-/*Método 2
+/*Método 2- valores de retorno: campo abierto / aceptar / cancelar
 const nombre = prompt("¿Cómo te llamas?");
 alert(nombre);*/
+//si en este método seleccioneas a la opción "cancelar", el valor de retorno es null
+
 
 /*_____________________
 VARIABLES
@@ -104,7 +109,7 @@ document.write('<p>Tu depópsito total es ' + depositoTotal + '</p>' );
 
 Alerta "árbol no equilibrado" puede ser resultado
 
-Funciones de conversión:
+Funciones de conversión de tope:
 
 number(); () NO es un método, es una función. Además permite obtener el valor númerico equivalente de cualquier tipo de dato, a diferencia que parseInt que se utiliza solo para string a number
 
@@ -385,7 +390,7 @@ document.write('<p><strong>¡Gracias por tu atención!</strong></p>');
 
 
 //PASO 7. Optimización. isNaN(edad) === true , no es necesario. Ver notas
-
+/*
 const edad = prompt("¿Qué edad tienes?");
 
 if (edad === null) {// este es el primer bloque de seguridad
@@ -424,5 +429,58 @@ if (edad === null) {// este es el primer bloque de seguridad
 
 document.write('<p><strong>¡Gracias por tu atención!</strong></p>');
 
+*/
+
+/* Ejercicio clase 3*/
+/* 
+De 0 a 500€ - sin descuento
+de 501 a 1000€ --- 10%
+1001 a 2000€ ---15% 
+2000€ a ---- 20%
+
+Averiguar cuanto se ha gastado el usurio y devolver la cantidad descontadaa
+"Para un gasto de XXX le corresponde un descuento de XX€ (total XX€)"
+1. cuanto se ha gastado
 
 
+*/
+
+const gasto = prompt("¿Cuánto te has gasto?");
+console.log(gasto);
+
+
+if ( gasto < 500 ){
+    document.write('Lo sentimos pero no le corresponde ningún descuento, siga comprando');
+}
+//( 501 < gasto < 1000 ) incorrecto
+
+if ( gasto > 500 && gasto <= 1000){
+
+    const descuento = gasto * 10/100;
+
+    const total= gasto - descuento;
+
+    document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+
+}
+
+
+if ( gasto > 1001 && gasto <= 2000 ){
+
+    const descuento = gasto * 20/100;
+    
+    const total= gasto - descuento;
+    
+    document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+
+}
+
+if ( gasto > 2000 ){
+    
+        const descuento = gasto * 30/100;
+        
+        const total= gasto - descuento;
+        
+        document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
+    
+    }

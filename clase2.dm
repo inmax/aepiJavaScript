@@ -26,6 +26,7 @@ Hay 6 tipos:
 
 3. COMPARACIÓN / RELACIONALES: conforamn expresiones comparativas que resultan en boolean
 >   >=  ==  ===   <=  <   !=    !==
+=== "estrictamente igual que " no solo compara el valor sino también el tipo de variable.
 
 4.OPERADORES LÓGICOS: conforman expresiones comparativas entre boleanos que resultan en boleanos
 &&  ||  !
@@ -57,7 +58,7 @@ Controlan el flujo de ejecución
         intruccion_2;
         intruccion_3;
     } // Si la expresión condicional tiene un valor true se ejecuta el primer bloque , si no, el segundo
-
+Solo un "else"
 
 
 ------> IMPORTANTE

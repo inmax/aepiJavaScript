@@ -48,7 +48,7 @@ Método prompt()
 Método confirm()
 
 _____________________
-VARIABLES
+2-VARIABLES
 _____________________
 
 Unidades nominales de almacenamiento de información. Tienen dos etapas: declacración y asignación
@@ -58,11 +58,12 @@ tipos de declaraciones:
 
 Ejemplo
 Restrictivas por orden 
+
     var miValor; redeclarciones
     let miValor; no redeclaraciones
     const;     no redeclaraciones, tiene que ser declarada y asignada al vez. Su valor no cambia
 ___________________________________
-TIPOS DE VARIABLES SEGÚN SU VALOR
+2.1-TIPOS DE VARIABLES SEGÚN SU VALOR
 ___________________________________
 
 -Reglas Nomenclatua.
