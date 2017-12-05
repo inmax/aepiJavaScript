@@ -445,9 +445,10 @@ Averiguar cuanto se ha gastado el usurio y devolver la cantidad descontadaa
 
 */
 
+
+/*
 const gasto = prompt("¿Cuánto te has gasto?");
 console.log(gasto);
-/*
 //Paso 1
 
 if ( gasto < 500 ){
@@ -487,7 +488,7 @@ if ( gasto > 2000 ){
     }
 */
 
-
+/*
 //paso 2. Utilización de else if . el script solo pasa a la siguiente condición hasta que haya conmprabado la anterior
 
 
@@ -518,4 +519,42 @@ if ( gasto < 500 ){
         
         document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
 
+}
+
+*/
+
+
+//paso 3. Optimización de código. Hay demasiado código repetido
+const gasto = prompt("¿Cuánto te has gasto?");
+
+// Hacer global la variable descuento y utilizar let y saca fuera de la estructura de control las directiva document.write() y la variable total, ya que se repitía en cada else
+
+
+let descuento;
+
+if ( gasto < 500 ){
+
+    document.write('Lo sentimos pero no le corresponde ningún descuento, siga comprando');
+
+} else if(gasto <= 1000){
+
+    descuento = gasto * 10/100;
+
+} else if(gasto <= 2000){
+
+    descuento = gasto * 20/100;
+    
+} else{
+
+    descuento = gasto * 30/100;
+
+}//
+
+// Si descuento existe , (por ejemplo No se las situación gasto de menos de 500€ , primer bloque), entoces libera ese script
+
+if(descuento){
+
+const total= gasto - descuento;
+
+document.write("Para un gasto de "+ gasto +" le corresponde un descuento de "+ descuento +"€ ("+ total +"€)");
 }
