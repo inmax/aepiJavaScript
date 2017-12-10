@@ -72,7 +72,7 @@ const continuar = confirm('Deseas continuar');
 
 if (continuar) {
 
-    aler("Epaaaa!");
+    alert("Epaaaa!");
 }
 
 paso 2 
